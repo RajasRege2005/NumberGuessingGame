@@ -40,8 +40,14 @@ elif choice=="hard":
             break
         elif guess>n:
             print("Too High")
+            print("Guess again")
+            chance-=1
+            print(f"You have {chance} tries remaining.")
         elif guess<n:
-            print("Too low")  
+            print("Too low")
+            print("Guess again")
+            chance-=1
+            print(f"You have {chance} tries remaining.")
       if chance==0:
           print("You lost.")
           print(f"Number was:{n}")                            
